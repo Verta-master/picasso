@@ -1113,9 +1113,254 @@ h3::after {
   opacity: 0.5;
 }
 .footer__link i {
+  margin-right: 5px;
   color: #52c0cb;
 }
 .footer__link:hover,
 .footer__link:active {
   opacity: 1;
+}
+.modal {
+  max-width: 300px;
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+.form__input {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form__btn {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  background-color: #1db3e2;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 1600px) {
+  .header {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .wrapper {
+    width: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+@media (max-width: 1278px) {
+  .wrapper,
+  .header {
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+  .menu__btn {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: 20px 20px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 0 52px;
+    padding-bottom: 25px;
+    background-color: #fff;
+  }
+  .menu__link {
+    text-align: right;
+  }
+  .course__item {
+    width: 280px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .course__img {
+    width: 100%;
+    height: auto;
+  }
+  .features__img {
+    width: 40%;
+    margin-left: 0;
+  }
+  .contacts__list {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px;
+  }
+  .contacts {
+    padding-top: 41px;
+  }
+  .program {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+  .program__wrap {
+    width: 100%;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
+@media (max-width: 1022px) {
+  .program__wrap,
+  .header,
+  .wrapper {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header__contacts {
+    margin-left: 10px;
+    padding: 0;
+  }
+  .header__wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .logo img {
+    width: 140px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .promo {
+    min-height: 730px;
+  }
+  .promo__wrap {
+    padding-top: 189px;
+  }
+  .course__item {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
+  }
+  .course__img {
+    width: 300px;
+  }
+  .benefits__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benefits__item {
+    width: 100%;
+  }
+  .story__wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features__item {
+    display: block;
+  }
+  .features__info {
+    width: 100%;
+  }
+  .features__img {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .contacts__list {
+    display: block;
+  }
+  .contacts__item {
+    width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid #ececec;
+  }
+  .footer__wrap {
+    display: block;
+  }
+  .footer__top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer__column {
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__title span {
+    font-size: 40px;
+  }
+  .program__wrap,
+  .header,
+  .wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .program__wrap,
+  .header,
+  .wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+  }
+  .promo__wrap h1 {
+    font-size: 20px;
+  }
+  .promo__welcome {
+    font-size: 18px;
+  }
+  .promo__title {
+    font-size: 24px;
+  }
+  .promo__title span {
+    font-size: 26px;
+  }
+  .promo__wrap {
+    padding-top: 200px;
+  }
+  .promo {
+    min-height: 650px;
+  }
+  .features__img {
+    width: 100%;
+  }
+  .features__img img {
+    width: 100%;
+    height: auto;
+  }
 }

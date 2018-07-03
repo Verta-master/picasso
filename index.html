@@ -7,6 +7,7 @@
   <title>Picasso</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400,700|Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -39,7 +40,7 @@
         <h1>Ищете курсы парикмахеров в Москве? Обучение с нуля по удобному для вас графику?</h1>
         <p class="promo__welcome"><span>ВЫ НАШЛИ МЕСТО ГДЕ ВАС НАУЧАТ!</span></p>
         <p class="promo__title">ШКОЛА ПАРИКМАХЕРСКОГО ИСКУССТВА<span>PICASSO</span></p>
-        <a href="#" class="btn btn--white promo__btn">ЗАПИСАТЬСЯ</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--white promo__btn">ЗАПИСАТЬСЯ</a>
       </div>
     </section>
     
@@ -292,7 +293,17 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <form action="#" method="post" class="form">
+      <input type="text" name="name" class="form__input" placeholder="Ваше имя">
+      <input type="tel" name="phone" class="form__input" placeholder="Ваш телефон">
+      <button type="submit" class="form__btn">Отправить</button>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>

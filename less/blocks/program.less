@@ -1,0 +1,34 @@
+.program {
+  padding-top: 77px;
+  padding-bottom: 77px;
+  text-align: center;
+}
+
+.program__wrap {
+  max-width: 1200px;
+}
+
+.program__list {
+  .reset();
+  list-style-type: none;
+  margin: 24px auto;
+  text-align: left;
+  max-width: 400px;
+  
+  li {
+    position: relative;
+    margin-bottom: 16px;
+    
+    &::before {
+      content: "\f046";
+      font-size: 18px;
+      float: none;
+      padding: 0 6px 0 0;
+      color: #ff6c3a;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+}
